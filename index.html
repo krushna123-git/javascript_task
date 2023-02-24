@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>validation</title>
+</head>
+
+<body>
+  <div class="main-sec">
+    <div class="title">
+      <h3>Tutor Registration Form</h3>
+      <p><span>*</span> Requied Fields</p>
+    </div>
+    <div class="sub-container">
+      <h4 class="sub-title">Tutor Login Information</h4>
+      <div class="table-cont">
+        <table>
+          <tr>
+            <td>
+              <label for="username"> Desired Username </label><span>*</span>
+            </td>
+            <td>
+              <input type="text" name="username" id="username" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Choose Password :</label><span>*</span>
+            </td>
+            <td>
+              <input type="password" name="password" id="password"/>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="question">Secret Question :</label></td>
+            <td>
+              <select name="question" id="">
+                <option value="">-: Select Secret Question :-</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="answer">Answer :</label> </td>
+            <td>
+              <input type="text" name="answer" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="sub-container">
+      <h4 class="sub-title">Personal Details & Tutor Contact Information</h4>
+      <div class="table-cont">
+        <table>
+          <tr>
+            <td> <label for="name">Name : </label> <span>*</span></td>
+            <td>
+              <input type="text" />
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="gender">Gender :</label> <span>*</span></td>
+            <td>
+              <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              &nbsp; <label for="age">Age :</label> <span>*</span>
+              <input type="number" id="age">
+            </td>
+
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> <label for="country">Country :</label> </td>
+            <td>
+              <input type="text" value="India" disabled />
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="location">Location :</label> <span>*</span></td>
+            <td>
+              <select name="location" id="">
+                <option value="">-: select your location :-</option>
+                <option value="">Parbhani</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="zipcode">Postal / Zip Code : </label><span>*</span></td>
+            <td>
+              <input type="text" name="zipcode" id="pincode" />
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="area">Area :</label></td>
+            <td>
+              <input type="text" name="area" id="area" />
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="address">Present Address : </label><span>*</span></td>
+            <td>
+              <textarea name="address" cols="30" rows="5" id="address"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="contact">Contact Number :</label> <span>*</span></td>
+            <td>
+              <input type="text" name="contact" id="contact" />
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="email">E-mail Address : </label> <span>*</span></td>
+            <td>
+              <input type="email" id="email" />
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="photo">Upload Photo :</label> </td>
+            <td>
+              <input type="file" id="photo" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span>( *.jpg,*.png,*.gif )</span></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="Continue" onclick="validation()" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

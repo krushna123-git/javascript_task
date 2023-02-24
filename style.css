@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-sec {
+  height: 99vh;
+  width: auto;
+  background: skyblue;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+span {
+  color: red;
+}
+
+.sub-container {
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.sub-container .sub-title {
+  background: #eee;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.sub-container .table-cont {
+  display: flex;
+  justify-content: center;
+}
+.sub-container table {
+  padding: 10px;
+}
+
+.table-cont table label {
+  color: brown;
+  font-weight: bold;
+}
+
+table input[type="text"] {
+  width: 200px;
+}
